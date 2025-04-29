@@ -18,7 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+from filmes.views import filme_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('filmes/', filme_view),
 ] + static(settings.MIDIA_URL, document_root=settings.MIDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

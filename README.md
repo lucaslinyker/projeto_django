@@ -17,3 +17,4 @@ python manage.py createsuperuser
     - email: lucaslinyker@outlook.com
     - passowrd: nikond800
 
+python manage.py runserver
