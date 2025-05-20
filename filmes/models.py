@@ -14,7 +14,7 @@ class Filme(models.Model):
     descricao = models.TextField()
     ano_lancamento = models.IntegerField()
     duracao = models.IntegerField()
-    genero = models.ForeignKey(Genero, on_delete=models.PROTECT, related_name='filmes')
+    genero = models.ForeignKey(Genero, on_delete=models.PROTECT)
     poster = models.ImageField(upload_to='posters/', blank=True, null=True)
 
     def __str__(self):
