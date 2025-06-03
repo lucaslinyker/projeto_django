@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.views.generic import ListView, CreateView, DetailView
-from django.viens.generic import UpdateView, DeleteView
+from django.views.generic import UpdateView, DeleteView
 
 class FilmesListView(ListView):
     model = Filme

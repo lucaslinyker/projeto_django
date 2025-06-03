@@ -18,3 +18,5 @@ python manage.py createsuperuser
     - passowrd: nikond800
 
 python manage.py runserver
+
+python manage.py startapp usuarios
